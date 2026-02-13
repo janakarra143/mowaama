@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 160 10% 97%;
+    --foreground: 192 30% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 192 30% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 192 30% 12%;
+
+    --primary: 170 60% 22%;
+    --primary-foreground: 45 80% 95%;
+
+    --secondary: 165 25% 90%;
+    --secondary-foreground: 170 60% 18%;
+
+    --muted: 160 15% 93%;
+    --muted-foreground: 192 15% 42%;
+
+    --accent: 42 75% 55%;
+    --accent-foreground: 192 30% 12%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 165 20% 88%;
+    --input: 165 20% 88%;
+    --ring: 170 60% 22%;
+
+    --radius: 0.625rem;
+
+    --gold: 42 75% 55%;
+    --gold-foreground: 42 90% 20%;
+    --teal-dark: 185 50% 12%;
+    --teal-light: 170 40% 40%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 192 30% 6%;
+    --foreground: 160 10% 95%;
+    --card: 192 25% 10%;
+    --card-foreground: 160 10% 95%;
+    --popover: 192 25% 10%;
+    --popover-foreground: 160 10% 95%;
+    --primary: 170 50% 45%;
+    --primary-foreground: 192 30% 6%;
+    --secondary: 192 20% 15%;
+    --secondary-foreground: 160 10% 95%;
+    --muted: 192 20% 15%;
+    --muted-foreground: 165 15% 60%;
+    --accent: 42 75% 55%;
+    --accent-foreground: 192 30% 6%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 192 20% 18%;
+    --input: 192 20% 18%;
+    --ring: 170 50% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
